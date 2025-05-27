@@ -13,6 +13,7 @@ import Updatecoffe from './componants/Updatecoffe';
 import Signup from './componants/Signup';
 import Signin from './componants/Signin';
 import Authprovider from './provider/Authprovider';
+import Users from './componants/Users';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,13 @@ const router = createBrowserRouter([
     path: "/signin",
     element:<Signin></Signin>,
   },
+
+  {
+    path: "/users",
+    element:<Users></Users>,
+  },
+
+
   {
     path: "updatecoffe/:id",
     element: <Updatecoffe></Updatecoffe>,
